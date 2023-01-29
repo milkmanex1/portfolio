@@ -1,23 +1,70 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
+import Home from "./components/Home";
+import Header from "./components/Header";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Skills from "./components/Skills";
+import Particle from "./components/Particle";
+import Canvas from "./components/Canvas";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className="h-screen w-screen overflow-hidden absolute">
+                <Header />
+                <Particle></Particle>
+                <Home />
+              </div>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <div>
+                <Header />
+
+                <About />
+              </div>
+            }
+          />
+          <Route
+            path="/skills"
+            element={
+              <div>
+                <Header />
+
+                <Skills />
+              </div>
+            }
+          />
+          <Route
+            path="/projects"
+            element={
+              <div className=" h-screen w-screen overflow-x-hidden">
+                <Header />
+
+                <Projects />
+              </div>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <div>
+                <Header />
+
+                <Contact />
+              </div>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

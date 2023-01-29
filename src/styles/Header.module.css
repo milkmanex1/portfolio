@@ -1,0 +1,26 @@
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+  background: transparent;
+  font-size: 2rem;
+  color: #fff;
+  position: sticky;
+  top: 0px;
+  padding: 4rem;
+  padding-top: 2rem;
+  font-family: poppins;
+}
+.right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+li {
+  text-align: center;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
