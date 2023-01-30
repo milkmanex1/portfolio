@@ -88,7 +88,7 @@ const Contact = () => {
           <motion.a
             variants={cvVariants}
             whileHover="hover"
-            href=""
+            href="CV/CV - Gabriel Kok Zi Yao.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white cursor-pointer text-2xl p-4 rounded-lg border-2 "
