@@ -19,11 +19,11 @@ const title = {
 };
 
 const skills1 = [
-  { name: "HTML5", image: "/images/html-icon.png" },
+  { name: "react|redux", image: "/images/react-icon.png" },
+  { name: "MongoDB", image: "/images/mongodb-icon.png" },
   { name: "CSS3", image: "/images/css3-icon.png" },
   { name: "tailwind", image: "/images/tailwind-icon.png" },
   { name: "javascript", image: "/images/javascript-icon2.png" },
-  { name: "react|redux", image: "/images/react-icon.png" },
 ];
 const skills2 = [
   { name: "node js", image: "/images/nodejs-icon.png" },
