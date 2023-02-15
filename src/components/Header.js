@@ -120,7 +120,7 @@ const Header = () => {
           </div>
           <HomeIcon
             style={{ fontSize: "2rem", color: "" }}
-            className="absolute top-6 left-6"
+            className="absolute top-6 left-6 "
           ></HomeIcon>
         </div>
       </motion.div>

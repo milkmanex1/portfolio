@@ -48,6 +48,7 @@ body {
   --color1: #00fff9;
   --color1: #ff0606;
 }
+
 .container {
   position: relative;
   width: 100%;
@@ -116,4 +117,6 @@ body {
   background: black;
   border-radius: 50%;
   z-index: 1;
+}
+@media only screen and (max-width: 600px) {
 }

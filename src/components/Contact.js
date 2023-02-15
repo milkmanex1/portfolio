@@ -1,6 +1,7 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { motion } from "framer-motion";
 
 const cvVariants = {
@@ -42,7 +43,7 @@ const title = {
 const Contact = () => {
   return (
     <div className="absolute top-0 grid grid- place-items-center  h-screen w-screen">
-      <div className=" grid h-2/3 grid-rows-4">
+      <div className=" grid h-2/3 ">
         <div className="grid place-items-center ">
           <motion.div
             variants={title}
@@ -54,7 +55,7 @@ const Contact = () => {
           </motion.div>
         </div>
 
-        <div className="row-span-2 grid sm:grid-cols-2 grid-cols-1 gap-x-16 ">
+        <div className="mt-8 row-span-2 grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 gap-x-16 gap-y-16 ">
           <div className="grid place-items-center px-4">
             <motion.a
               variants={btnVariants}
@@ -83,18 +84,32 @@ const Contact = () => {
               ></EmailIcon>
             </motion.a>
           </div>
-        </div>
-        <div className="grid place-items-center px-4">
-          <motion.a
-            variants={cvVariants}
-            whileHover="hover"
-            href="CV/CV - Gabriel Kok Zi Yao.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white cursor-pointer text-2xl p-4 rounded-lg border-2 "
-          >
-            Download My CV
-          </motion.a>
+          <div className="grid place-items-center px-4">
+            <motion.a
+              variants={btnVariants}
+              whileHover="hover"
+              href="https://www.linkedin.com/in/gabriel-kok-3b5709163"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon
+                style={{ fontSize: "18vh" }}
+                className="text-white cursor-pointer "
+              ></LinkedInIcon>
+            </motion.a>
+          </div>
+          <div className="grid place-items-center px-4">
+            <motion.a
+              variants={cvVariants}
+              whileHover="hover"
+              href="CV/CV - Gabriel Kok Zi Yao.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white cursor-pointer text-2xl p-4 rounded-lg border-2 "
+            >
+              Download My CV
+            </motion.a>
+          </div>
         </div>
       </div>
     </div>
